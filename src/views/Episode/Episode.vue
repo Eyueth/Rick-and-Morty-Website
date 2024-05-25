@@ -62,7 +62,7 @@
     export default {
         name: 'Episode',
         components: {
-          PageHePageHeaderader,
+          PageHeader,
         webFooter    
         },
     setup () {
