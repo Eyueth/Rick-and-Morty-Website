@@ -1,4 +1,5 @@
 <template>
+    <PageHeader />
     <div class="min-h-screen p-6 text-white bg-gray-900">
       <p v-if="error" class="text-red-500">Error</p>
       <p v-if="loading" class="text-yellow-500">Loading...</p>
@@ -44,6 +45,7 @@
     import gql from 'graphql-tag';
     import { useQuery } from '@vue/apollo-composable';
     import webFooter from '../../components/Footer.vue'
+    import PageHeaader from '../../components/PageHeader.vue'
         
     const CHARACTERS_QUERY = gql`
   query Characters {
@@ -73,6 +75,7 @@
     export default {
         name: 'Character',
         components: {
+            PageHeaader,
         webFooter    
         },
     setup () {

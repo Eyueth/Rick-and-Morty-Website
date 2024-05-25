@@ -1,4 +1,5 @@
 <template>
+  <PageHeader />
   <div class="min-h-screen p-6 text-white bg-gray-900">
     <p v-if="error" class="text-red-500">Error loading data</p>
     <p v-if="loading" class="text-yellow-500">Loading...</p>
@@ -36,8 +37,9 @@
 <script>
 import gql from 'graphql-tag';
 import { useQuery } from '@vue/apollo-composable';
-import { RouterLink } from 'vue-router';
 import webFooter from '../../components/Footer.vue'
+    import PageHeaader from '../../components/PageHeader.vue'
+import PageHeader from '../../components/PageHeader.vue';
 
 const LOCATION_QUERY = gql`
   query Locations {
@@ -64,6 +66,7 @@ const LOCATION_QUERY = gql`
 export default {
   name: 'Location',
   components: {
+    PageHeaader,
         webFooter    
         },
   setup() {

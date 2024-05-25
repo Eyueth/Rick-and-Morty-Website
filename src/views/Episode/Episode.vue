@@ -1,4 +1,5 @@
   <template>
+    <PageHeader />
     <div class="pt-10 bg-gray-900">
       
       <div class="container mx-auto bg-gray-900 pconta-4">
@@ -35,6 +36,8 @@
     import gql from 'graphql-tag';
     import { useQuery } from '@vue/apollo-composable';
     import webFooter from '../../components/Footer.vue'
+    import PageHeaader from '../../components/PageHeader.vue'
+import PageHeader from '../../components/PageHeader.vue';
         
     const EPISODE_QUERY = gql`
     query {
@@ -60,6 +63,7 @@
     export default {
         name: 'Episode',
         components: {
+          PageHeaader,
         webFooter    
         },
     setup () {
