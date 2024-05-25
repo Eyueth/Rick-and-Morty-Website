@@ -45,7 +45,7 @@
     import gql from 'graphql-tag';
     import { useQuery } from '@vue/apollo-composable';
     import webFooter from '../../components/Footer.vue'
-    import PageHeaader from '../../components/PageHeader.vue'
+    import PageHeader from '../../components/PageHeader.vue'
         
     const CHARACTERS_QUERY = gql`
   query Characters {
@@ -75,7 +75,7 @@
     export default {
         name: 'Character',
         components: {
-            PageHeaader,
+            PageHeader,
         webFooter    
         },
     setup () {

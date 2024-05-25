@@ -38,7 +38,6 @@
 import gql from 'graphql-tag';
 import { useQuery } from '@vue/apollo-composable';
 import webFooter from '../../components/Footer.vue'
-    import PageHeaader from '../../components/PageHeader.vue'
 import PageHeader from '../../components/PageHeader.vue';
 
 const LOCATION_QUERY = gql`
@@ -66,7 +65,7 @@ const LOCATION_QUERY = gql`
 export default {
   name: 'Location',
   components: {
-    PageHeaader,
+    PageHeader,
         webFooter    
         },
   setup() {
