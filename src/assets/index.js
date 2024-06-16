@@ -7,6 +7,7 @@ import Location from '../views/Location/Location.vue'
 import CharacterList from '@/components/CharacterList.vue'
 import EpisodeLink from '@/components/EpisodeLink.vue'
 import LocationList from '@/components/LocationList.vue'
+import { component } from 'vue/types/umd'
 const routes = [
   {
     path: '/',
@@ -14,17 +15,17 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/../components/EpisodeLink.vue',
+    path: '../components/EpisodeLink.vue',
     name: 'EpisodeLink',
     component: EpisodeLink
   },
   {
-    path: '/../components/CharacterList.vue',
+    path: '../components/CharacterList.vue',
     name: 'CharacterList',
     component: CharacterList
   },
   {
-    path: '/../components/LocationList.vue',
+    path: '../components/LocationList.vue',
     name: 'LocationList',
     component: LocationList
   },
