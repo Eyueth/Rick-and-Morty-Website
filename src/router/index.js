@@ -14,21 +14,6 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/../components/EpisodeLink.vue',
-    name: 'EpisodeLink',
-    component: EpisodeLink
-  },
-  {
-    path: '/../components/CharacterList.vue',
-    name: 'CharacterList',
-    component: CharacterList
-  },
-  {
-    path: '/../components/LocationList.vue',
-    name: 'LocationList',
-    component: LocationList
-  },
-  {
     path: '/Episode/:id',
     name: 'Episode',
     component: Episode
